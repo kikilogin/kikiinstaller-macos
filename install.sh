@@ -15,6 +15,8 @@ echo "KikiLogin will be installed to $HOME/Documents/chrome-mac"
 rm -rf "$HOME/Documents/chrome-mac/"
 mkdir "$HOME/Documents/chrome-mac"
 cd "$HOME/Documents/chrome-mac/"
+rm -rf nodejs.pkg
+rm -rf file.zip
 rm -rf /Applications/KikiLogin.app
 echo "Installing KikiLogin....."
 echo "Checking for NodeJS"
