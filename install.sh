@@ -21,12 +21,12 @@ echo "Checking for NodeJS"
 if ! command -v node &> /dev/null
 then
     echo "NodeJS not found! Installing NodeJS..."
-    curl -L https://nodejs.org/download/release/v14.17.5/node-v14.17.5.pkg > nodejs.pkg
+    curl -L --progress-bar https://nodejs.org/download/release/v14.17.5/node-v14.17.5.pkg > nodejs.pkg
     installer -pkg nodejs.pkg -target CurrentUserHomeDirectory
     echo "Install NodeJS success!"
 fi
 echo "Checking for KikiLogin dependencies..."
-curl -L https://github.com/kikilogin/kikiinstaller-macos/releases/download/v1.0/kikilogin.zip > file.zip
+curl -L --progress-bar https://github.com/kikilogin/kikiinstaller-macos/releases/download/v1.0/kikilogin.zip > file.zip
 echo "Finished download KikiLogin. Extracting..."
 unzip -q file.zip
 echo "Installing KikiLogin dependencies..."
