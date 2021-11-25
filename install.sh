@@ -33,6 +33,6 @@ echo "Installing KikiLogin dependencies..."
 PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm i &> /dev/null
 echo "Copy KikiLogin app to App folder...."
 cp -R KikiLogin.app /Applications/KikiLogin.app
-rm nodejs.pkg
-rm file.zip
+rm -rf nodejs.pkg
+rm -rf file.zip
 echo "Finished!"
